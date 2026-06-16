@@ -4,8 +4,7 @@ Detection of Distributed Denial-of-Service (DDoS) attacks in a 6G Radio Access
 Network using a **Multi-Agent Reinforcement Learning (MARL)** detector and a
 **Hybrid MARL + Quantum Machine Learning (QML)** detector.
 
-> Responsible AI Lab — Centurion University of Technology and Management (CUTM-AP)
-> Author: Uttpal Tripathy, Assistant Professor, Dept. of CSE
+
 
 ---
 
