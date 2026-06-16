@@ -16,7 +16,8 @@ applies a 6G sensing-noise model, and then feeds two parallel branches — a MAR
 and a QML branch — whose probabilities are combined by weighted late fusion to produce
 the final attack/normal decision.
 
-![Overall Framework Architecture](figures/fig1_overall_framework.png)
+<img width="1610" height="977" alt="image" src="https://github.com/user-attachments/assets/8411b894-b777-42f8-8017-069f296b36bc" />
+
 
 Raw **6G RAN traffic data** (packet statistics, beamforming metrics, THz band info,
 device density, mobility speed, slice information) passes through **data cleaning and
@@ -38,7 +39,8 @@ scored on accuracy, precision, recall, F1, ROC curve, and confusion matrix.
 The hybrid model routes the same input feature vector into both detectors in parallel
 and fuses their probabilities with a tunable weight alpha.
 
-![Architecture of Hybrid MARL-QML Model](figures/fig2_hybrid_marl_qml.png)
+<img width="1619" height="972" alt="image" src="https://github.com/user-attachments/assets/63f49c2e-6bf7-49b3-9d47-aea2446ee3c2" />
+
 
 The **MARL detector** runs N cooperative agents whose decisions are combined by
 majority voting to produce P_MARL. In parallel, the **quantum feature mapper** applies
@@ -61,7 +63,8 @@ The MARL branch models several 6G edge nodes, each running an autonomous detecti
 agent that observes a partial view of the environment and contributes to a cooperative
 decision.
 
-![Multi-Agent Reinforcement Learning Architecture](figures/fig3_marl_architecture.png)
+<img width="1023" height="1537" alt="image" src="https://github.com/user-attachments/assets/2a216ebb-05fb-4dab-b347-a868d4cafa5e" />
+
 
 Each **edge agent** draws a **local observation** O_i (a partial view of the 6G RAN)
 and learns a **policy** pi_i mapping observations to actions. Agents optimize a shared
@@ -77,7 +80,8 @@ closing the reinforcement-learning loop.
 The QML branch encodes normalized classical features into a quantum-style feature
 space and learns a nonlinear decision boundary there.
 
-![Quantum Machine Learning Pipeline](figures/fig4_qml_pipeline.png)
+<img width="1721" height="914" alt="image" src="https://github.com/user-attachments/assets/c565d5ce-77cc-4e31-9597-028b340ad759" />
+
 
 The pipeline runs in six stages: (1) **normalized features** after preprocessing;
 (2) a **quantum feature map** that encodes each classical vector x into a quantum
